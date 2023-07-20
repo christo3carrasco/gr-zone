@@ -1,0 +1,24 @@
+#home {
+  background-color: #000;
+  height: 100vh;
+}
+
+.logo-1,
+.logo-2 {
+  border: 5px solid #fff;
+  font-weight: bold;
+  margin-top: 40vh;
+  padding: 10px;
+}
+
+.logo-1 {
+  background-color: #fff;
+  color: #000;
+  margin-left: auto;
+}
+
+.logo-2 {
+  background-color: #000;
+  color: #fff;
+  margin-right: auto;
+}
