@@ -26,3 +26,8 @@
 .text-justify {
   text-align: justify;
 }
+
+#services,
+footer {
+  background-color: #000;
+}
