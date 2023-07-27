@@ -107,11 +107,15 @@
       <section id="about">
         <div class="container py-5">
           <div class="row">
-            <div class="col-md-9 mx-auto">
+            <div class="col-lg-9 mx-auto">
               <h1 class="text-center">Nosotros</h1>
               <div class="card-group">
                 <div class="card">
-                  <img src="./img/img-1.jpg" class="card-img-top" alt="..." />
+                  <img
+                    src="./img/img-1.jpg"
+                    class="card-img-top"
+                    alt="Misión de Zona Gym Rat"
+                  />
                   <div class="card-body">
                     <h5 class="card-title text-center">Misión</h5>
                     <p class="card-text text-justify">
@@ -126,7 +130,11 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img src="./img/img-2.jpg" class="card-img-top" alt="..." />
+                  <img
+                    src="./img/img-2.jpg"
+                    class="card-img-top"
+                    alt="Visión de Zona Gym Rat"
+                  />
                   <div class="card-body">
                     <h5 class="card-title text-center">Visión</h5>
                     <p class="card-text text-justify">
@@ -140,6 +148,43 @@
                     </p>
                   </div>
                 </div>
+              </div>
+              <div class="dropdown-center text-center pt-3">
+                <a
+                  class="btn btn-dark dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Zona Gym Rat
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=51948052491&text=%C2%A1Hola!%20%F0%9F%91%8B%20Estoy%20interesado%2Fa%20en%20obtener%20informaci%C3%B3n%20sobre%20tus%20servicios%20de%20asesor%C3%ADa%20de%20entrenamiento%20personalizado%20en%20%22Zona%20Gym%20Rat%22.%20%F0%9F%8F%8B%EF%B8%8F%E2%80%8D%E2%99%82%EF%B8%8F%20%C2%BFPodr%C3%ADas%20proporcionarme%20detalles%20sobre%20los%20programas%20de%20entrenamiento%20y%20c%C3%B3mo%20puedo%20empezar%3F%20%F0%9F%A4%94%20%C2%A1Gracias!"
+                      >WhatsApp
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="https://www.instagram.com/_zonagymrat_/"
+                      >Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="https://www.tiktok.com/@_zona_gymrat_/"
+                      >TikTok
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -299,6 +344,130 @@
                       </a>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h1 class="text-center">Contacto</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <p class="text-center">
+                ¡Únete a la comunidad de Zona Gym Rat completando nuestro
+                formulario! Diseñaremos un plan de entrenamiento personalizado
+                para ayudarte a alcanzar tus metas fitness. 💪🏋️‍♂️
+              </p>
+              <form
+                name="contact"
+                action="./pages/success.html"
+                method="POST"
+                data-netlify="true"
+              >
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Nombres y Apellidos"
+                    pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
+                    minlength="3"
+                    required
+                  />
+                  <label for="fullname">Nombres y Apellidos</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="phone"
+                    placeholder="987654321"
+                    min="900000000"
+                    max="999999999"
+                    required
+                  />
+                  <label for="phone">Teléfono Celular</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="email@gymrat.com"
+                    required
+                  />
+                  <label for="email">Correo electrónico</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="¡Hola! Estoy interesado/a en obtener información sobre tus servicios de asesoría de entrenamiento personalizado en Zona Gym Rat. ¿Podrías proporcionarme detalles sobre los programas de entrenamiento y cómo puedo empezar? ¡Gracias!"
+                    id="message"
+                    name="message"
+                    minlength="3"
+                    required
+                  ></textarea>
+                  <label for="message">Mensaje</label>
+                </div>
+                <div class="d-grid">
+                  <input class="btn btn-dark" type="submit" value="Enviar" />
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <p class="text-center">
+                ¡Conéctate con nosotros en las redes sociales para mantenerte al
+                día con las últimas novedades sobre fitness y bienestar!
+                Síguenos en TikTok, Instagram y WhatsApp para acceder a consejos
+                de entrenamiento, inspiración diaria y participar en
+                emocionantes sorteos. ¡Únete a nuestra comunidad en línea y sé
+                parte de la familia de Zona Gym Rat! 🏋️‍♂️💪😃
+              </p>
+              <div class="row text-center my-3">
+                <h6>TikTok</h6>
+                <div class="col-lg-12">
+                  <a
+                    class="btn btn-lg btn-dark rounded-circle"
+                    role="button"
+                    target="_blank"
+                    href="https://www.tiktok.com/@_zona_gymrat_/"
+                  >
+                    <i class="bi bi-tiktok"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row text-center my-3">
+                <h6>Instagram</h6>
+                <div class="col-lg-12">
+                  <a
+                    class="btn btn-lg btn-dark rounded-circle"
+                    role="button"
+                    target="_blank"
+                    href="https://www.instagram.com/_zonagymrat_/"
+                  >
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row text-center my-3">
+                <h6>WhatsApp</h6>
+                <div class="col-lg-12">
+                  <a
+                    class="btn btn-lg btn-dark rounded-circle"
+                    role="button"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51948052491&text=%C2%A1Hola!%20%F0%9F%91%8B%20Estoy%20interesado%2Fa%20en%20obtener%20informaci%C3%B3n%20sobre%20tus%20servicios%20de%20asesor%C3%ADa%20de%20entrenamiento%20personalizado%20en%20%22Zona%20Gym%20Rat%22.%20%F0%9F%8F%8B%EF%B8%8F%E2%80%8D%E2%99%82%EF%B8%8F%20%C2%BFPodr%C3%ADas%20proporcionarme%20detalles%20sobre%20los%20programas%20de%20entrenamiento%20y%20c%C3%B3mo%20puedo%20empezar%3F%20%F0%9F%A4%94%20%C2%A1Gracias!"
+                  >
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
                 </div>
               </div>
             </div>
